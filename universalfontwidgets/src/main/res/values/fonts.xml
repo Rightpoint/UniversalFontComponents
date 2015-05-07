@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="Font.Roboto.Black">1</integer>
+    <integer name="Font.Roboto.Black.Italic">2</integer>
+    <integer name="Font.Roboto.Bold">3</integer>
+    <integer name="Font.Roboto.Bold.Italic">5</integer>
+    <integer name="Font.Roboto.Italic">8</integer>
+    <integer name="Font.Roboto.Light">13</integer>
+    <integer name="Font.Roboto.Light.Italic">21</integer>
+    <integer name="Font.Roboto.Medium">34</integer>
+    <integer name="Font.Roboto.Medium.Italic">55</integer>
+    <integer name="Font.Roboto.Regular">89</integer>
+    <integer name="Font.Roboto.Thin">144</integer>
+    <integer name="Font.Roboto.Thin.Italic">233</integer>
+    <integer name="Font.Roboto.Condensed.Bold">377</integer>
+    <integer name="Font.Roboto.Condensed.Bold.Italic">610</integer>
+    <integer name="Font.Roboto.Condensed.Italic">987</integer>
+    <integer name="Font.Roboto.Condensed.Light">1597</integer>
+    <integer name="Font.Roboto.Condensed.Light.Italic">2584</integer>
+    <integer name="Font.Roboto.Condensed.Regular">4181</integer>
+
+</resources>

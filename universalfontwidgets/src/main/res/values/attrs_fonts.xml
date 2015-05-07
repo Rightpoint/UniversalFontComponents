@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <integer name="Font.Roboto.Black">1</integer>
+    <attr name="universalFont" format="integer">
+        <enum name="Roboto.Black" value="1" />
+        <enum name="Roboto.Black.Italic" value="2" />
+        <enum name="Roboto.Bold" value="3" />
+        <enum name="Roboto.Bold.Italic" value="5" />
+        <enum name="Roboto.Italic" value="8" />
+        <enum name="Roboto.Light" value="13" />
+        <enum name="Roboto.Light.Italic" value="21" />
+        <enum name="Roboto.Medium" value="34" />
+        <enum name="Roboto.MediumItalic" value="55" />
+        <enum name="Roboto.Regular" value="89" />
+        <enum name="Roboto.Thin" value="144" />
+        <enum name="Roboto.Thin.Italic" value="233" />
+        <enum name="Roboto.Condensed.Bold" value="377" />
+        <enum name="Roboto.Condensed.Bold.Italic" value="610" />
+        <enum name="Roboto.Condensed.Italic" value="987" />
+        <enum name="Roboto.Condensed.Light" value="1597" />
+        <enum name="Roboto.Condensed.LightItalic" value="2584" />
+        <enum name="Roboto.Condensed.Regular" value="4181" />
+    </attr>
+
+    <declare-styleable name="UniversalFontButton">
+        <attr name="universalFont" />
+        <attr name="customFont" />
+    </declare-styleable>
+
+    <declare-styleable name="UniversalFontEditText">
+        <attr name="universalFont" />
+        <attr name="customFont" />
+    </declare-styleable>
+
+    <declare-styleable name="UniversalFontTextView">
+        <attr name="universalFont" />
+        <attr name="customFont" />
+    </declare-styleable>
+
+    <declare-styleable name="FontRadioButton">
+        <attr name="universalFont" />
+        <attr name="customFont" />
+    </declare-styleable>
+</resources>
