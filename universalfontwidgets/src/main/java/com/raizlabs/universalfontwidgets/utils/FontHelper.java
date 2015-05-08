@@ -10,109 +10,109 @@ public class FontHelper {
         RobotoBlack {
             @Override
             public String getAssetPath() {
-                return "fonts/roboto/Roboto-Black.ttf";
+                return "fonts/Roboto-Black.ttf";
             }
         },
         RobotoBlackItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-BlackItalic.ttf";
+                return "fonts/Roboto-BlackItalic.ttf";
             }
         },
         RobotoBold {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Bold.ttf";
+                return "fonts/Roboto-Bold.ttf";
             }
         },
         RobotoBoldItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Italic.ttf";
+                return "fonts/Roboto-Italic.ttf";
             }
         },
         RobotoItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Italic.ttf";
+                return "fonts/Roboto-Italic.ttf";
             }
         },
         RobotoLight {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Light.ttf";
+                return "fonts/Roboto-Light.ttf";
             }
         },
         RobotoLightItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-LightItalic.ttf";
+                return "fonts/Roboto-LightItalic.ttf";
             }
         },
         RobotoMedium {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Medium.ttf";
+                return "fonts/Roboto-Medium.ttf";
             }
         },
         RobotoMediumItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-MediumItalic.ttf";
+                return "fonts/Roboto-MediumItalic.ttf";
             }
         },
         RobotoRegular {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Regular.ttf";
+                return "fonts/Roboto-Regular.ttf";
             }
         },
         RobotoThin {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-Thin.ttf";
+                return "fonts/Roboto-Thin.ttf";
             }
         },
         RobotoThinItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/Roboto-ThinItalic.ttf";
+                return "fonts/Roboto-ThinItalic.ttf";
             }
         },
         RobotoCondensedBold {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-Bold.ttf";
+                return "fonts/RobotoCondensed-Bold.ttf";
             }
         },
         RobotoCondensedBoldItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-Bold.ttf";
+                return "fonts/RobotoCondensed-Bold.ttf";
             }
         },
         RobotoCondensedItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-Italic.ttf";
+                return "fonts/RobotoCondensed-Italic.ttf";
             }
         },
         RobotoCondensedLight {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-Light.ttf";
+                return "fonts/RobotoCondensed-Light.ttf";
             }
         },
         RobotoCondensedLightItalic {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-LightItalic.ttf";
+                return "fonts/RobotoCondensed-LightItalic.ttf";
             }
         },
         RobotoCondensedRegular {
             @Override
             protected String getAssetPath() {
-                return "fonts/roboto/RobotoCondensed-Regular.ttf";
+                return "fonts/RobotoCondensed-Regular.ttf";
             }
         };
 

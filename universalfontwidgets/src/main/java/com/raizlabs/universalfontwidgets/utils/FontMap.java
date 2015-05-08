@@ -2,14 +2,19 @@ package com.raizlabs.universalfontwidgets.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.util.SparseArray;
 
 import com.raizlabs.universalfontwidgets.R;
 import com.raizlabs.universalfontwidgets.utils.FontHelper.Font;
 
+import java.util.HashMap;
+
 public class FontMap {
 
     private static SparseArray<FontHelper.Font> map;
+
+    private static HashMap<String, Typeface> customFontMap;
 
     /**
      * Initializes the mapping of XML attributes. May be called more than
@@ -40,10 +45,10 @@ public class FontMap {
             loadFont(resources, R.integer.Font_Roboto_Condensed_Light_Italic, Font.RobotoCondensedLightItalic);
             loadFont(resources, R.integer.Font_Roboto_Condensed_Regular, Font.RobotoCondensedRegular);
         }
-    }
 
-    private static void loadFont(Resources resources, int resourceID, Font font) {
-        map.put(resources.getInteger(resourceID), font);
+        if (customFontMap == null) {
+            customFontMap = new HashMap<>();
+        }
     }
 
     /**
@@ -56,5 +61,31 @@ public class FontMap {
      */
     public static Font getFontForKey(int key) {
         return map.get(key);
+    }
+
+    public static void loadCustomFont(String assetPath, Typeface font) {
+        customFontMap.put(assetPath, font);
+    }
+
+    public static Typeface getFontForKey(String assetPath) {
+        return customFontMap.get(assetPath);
+    }
+
+    public static Typeface getFontForKey(Context context, String assetPath) {
+        if (customFontMap.containsKey(assetPath)) {
+            return customFontMap.get(assetPath);
+        } else {
+            Typeface font = Typeface.createFromAsset(context.getAssets(), assetPath);
+            if (font != null) {
+                customFontMap.put(assetPath, font);
+                return font;
+            } else {
+                return null;
+            }
+        }
+    }
+
+    private static void loadFont(Resources resources, int resourceID, Font font) {
+        map.put(resources.getInteger(resourceID), font);
     }
 }

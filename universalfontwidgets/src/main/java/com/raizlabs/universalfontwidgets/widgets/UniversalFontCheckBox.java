@@ -3,19 +3,20 @@ package com.raizlabs.universalfontwidgets.widgets;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatRadioButton;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
 
 import com.raizlabs.universalfontwidgets.R;
 import com.raizlabs.universalfontwidgets.utils.FontHelper;
 import com.raizlabs.universalfontwidgets.utils.FontMap;
 
-public class UniversalFontRadioButton extends AppCompatRadioButton {
-    public UniversalFontRadioButton(Context context) {
+public class UniversalFontCheckBox extends AppCompatCheckBox {
+
+    public UniversalFontCheckBox(Context context) {
         super(context);
     }
 
-    public UniversalFontRadioButton(Context context, AttributeSet attrs) {
+    public UniversalFontCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
@@ -23,8 +24,12 @@ public class UniversalFontRadioButton extends AppCompatRadioButton {
         arr.recycle();
     }
 
-    public UniversalFontRadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public UniversalFontCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
+        TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
+        readArray(arr);
+        arr.recycle();
     }
 
     public void setFont(FontHelper.Font font) {
@@ -47,9 +52,9 @@ public class UniversalFontRadioButton extends AppCompatRadioButton {
             return;
         }
 
-        int fontInt = arr.getInt(R.styleable.UniversalFontRadioButton_universalFont, -1);
+        int fontInt = arr.getInt(R.styleable.UniversalFontCheckBox_universalFont, -1);
 
-        String fontPath = arr.getString(R.styleable.UniversalFontRadioButton_customFont);
+        String fontPath = arr.getString(R.styleable.UniversalFontCheckBox_customFont);
 
         if (fontPath != null) {
             setFont(fontPath);

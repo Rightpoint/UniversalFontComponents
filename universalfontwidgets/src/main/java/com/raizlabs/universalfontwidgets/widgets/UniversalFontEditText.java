@@ -33,11 +33,17 @@ public class UniversalFontEditText extends AppCompatEditText {
     }
 
     public void setFont(FontHelper.Font font) {
-        setTypeface(font.getTypeface(getContext()));
+        if (font != null) {
+            setTypeface(font.getTypeface(getContext()));
+        }
     }
 
     public void setFont(String assetPath) {
-        setTypeface(Typeface.createFromAsset(getResources().getAssets(), assetPath));
+        Typeface font = FontMap.getFontForKey(getContext(), assetPath);
+
+        if (font != null) {
+            setTypeface(font);
+        }
     }
 
     private void readArray(TypedArray arr) {
@@ -48,14 +54,13 @@ public class UniversalFontEditText extends AppCompatEditText {
 
         int fontInt = arr.getInt(R.styleable.UniversalFontEditText_universalFont, -1);
 
-        if (fontInt == -1) {
-            String fontString = arr.getString(R.styleable.UniversalFontEditText_customFont);
-            setFont(fontString);
+        String fontPath = arr.getString(R.styleable.UniversalFontEditText_customFont);
+
+        if (fontPath != null) {
+            setFont(fontPath);
         } else {
             FontHelper.Font font = FontMap.getFontForKey(fontInt);
-            if (font != null) {
-                setFont(font);
-            }
+            setFont(font);
         }
     }
 }

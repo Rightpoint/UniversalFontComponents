@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
-    <integer name="Font.Roboto.Black">1</integer>
     <attr name="universalFont" format="integer">
         <enum name="Roboto.Black" value="1" />
         <enum name="Roboto.Black.Italic" value="2" />
@@ -24,6 +22,8 @@
         <enum name="Roboto.Condensed.Regular" value="4181" />
     </attr>
 
+    <attr name="customFont" format="string" />
+
     <declare-styleable name="UniversalFontButton">
         <attr name="universalFont" />
         <attr name="customFont" />
@@ -39,7 +39,12 @@
         <attr name="customFont" />
     </declare-styleable>
 
-    <declare-styleable name="FontRadioButton">
+    <declare-styleable name="UniversalFontRadioButton">
+        <attr name="universalFont" />
+        <attr name="customFont" />
+    </declare-styleable>
+
+    <declare-styleable name="UniversalFontCheckBox">
         <attr name="universalFont" />
         <attr name="customFont" />
     </declare-styleable>
