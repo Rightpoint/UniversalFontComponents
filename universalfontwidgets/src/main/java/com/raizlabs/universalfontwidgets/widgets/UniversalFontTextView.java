@@ -10,8 +10,6 @@ import com.raizlabs.universalfontwidgets.R;
 import com.raizlabs.universalfontwidgets.utils.FontHelper;
 import com.raizlabs.universalfontwidgets.utils.FontMap;
 
-import java.lang.reflect.Type;
-
 public class UniversalFontTextView extends AppCompatTextView {
 
     public UniversalFontTextView(Context context) {
@@ -41,7 +39,7 @@ public class UniversalFontTextView extends AppCompatTextView {
     }
 
     public void setFont(String assetPath) {
-        Typeface font = FontMap.getFontForKey(getContext(), assetPath);
+        Typeface font = FontMap.getFontForPath(getContext(), assetPath);
 
         if (font != null) {
             setTypeface(font);

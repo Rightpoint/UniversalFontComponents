@@ -1,1 +1,1 @@
-include ':app', ':universalfontwidgets'
+include ':sample', ':universalfontwidgets'

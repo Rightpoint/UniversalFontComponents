@@ -58,20 +58,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:customFont="From_Cartoon_Blocks.ttf"/>
+            app:customFont="@string/custom_font"/>
 
 
         <com.raizlabs.universalfontwidgets.widgets.UniversalFontButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
-            app:customFont="From_Cartoon_Blocks.ttf"/>
+            app:customFont="@string/custom_font"/>
 
         <com.raizlabs.universalfontwidgets.widgets.UniversalFontRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Radio Button"
-            app:customFont="From_Cartoon_Blocks.ttf"/>
+            app:customFont="@string/custom_font"/>
     </LinearLayout>
 
 </LinearLayout>

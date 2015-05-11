@@ -39,7 +39,7 @@ public class UniversalFontEditText extends AppCompatEditText {
     }
 
     public void setFont(String assetPath) {
-        Typeface font = FontMap.getFontForKey(getContext(), assetPath);
+        Typeface font = FontMap.getFontForPath(getContext(), assetPath);
 
         if (font != null) {
             setTypeface(font);
