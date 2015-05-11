@@ -1,4 +1,4 @@
-package com.raizlabs.universalfont.sample;
+package com.raizlabs.universalfontwidgets.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

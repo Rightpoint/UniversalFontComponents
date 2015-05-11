@@ -58,20 +58,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:customFont="@string/custom_font"/>
+            app:customFont="@string/Font.CNR"/>
 
 
         <com.raizlabs.universalfontwidgets.widgets.UniversalFontButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
-            app:customFont="@string/custom_font"/>
+            app:customFont="@string/Font.CNR"/>
 
         <com.raizlabs.universalfontwidgets.widgets.UniversalFontRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Radio Button"
-            app:customFont="@string/custom_font"/>
+            app:customFont="@string/Font.CNR"/>
     </LinearLayout>
 
 </LinearLayout>

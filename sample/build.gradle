@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.raizlabs.universalfont.sample"
+        applicationId "com.raizlabs.universalfontwidgets.sample"
         minSdkVersion 10
         targetSdkVersion 22
         versionCode 1
