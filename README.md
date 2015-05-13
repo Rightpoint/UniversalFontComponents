@@ -76,6 +76,7 @@ To use this library:
     ![ScreenshotDependencies] (/Screenshot_Dependencies.png)
 
   9. Click the '+' on the bottom to add a dependency and select 'Module Dependency'
+
     ![ScreenshotModuleDependency] (/Screenshot_AddDependency.png)
 
   10. Select the universalfontcomponents module and click 'OK'
