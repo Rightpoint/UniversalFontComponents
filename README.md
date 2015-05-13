@@ -62,5 +62,6 @@ To use this library:
   2. Clone this repository into the Libraries folder.
   3. In Android Studio, right-click on the top-level project module and click on Open Module Settings
   
-    ![MenuImage] (http://i59.tinypic.com/otixwl.png)
+    ![ScreenshotMenu] (/Screenshot_Menu_Modules.png)
+
   4. Click on the '+' sign on the top left to add a module
