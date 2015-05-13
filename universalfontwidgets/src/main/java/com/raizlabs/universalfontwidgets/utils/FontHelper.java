@@ -137,4 +137,8 @@ public class FontHelper {
     public static void applyFont(TextView view, Font font) {
         view.setTypeface(font.getTypeface(view.getContext()));
     }
+
+    public static void applyFont(TextView view, String fontAssetPath) {
+        view.setTypeface(FontMap.getFontForPath(view.getContext(), fontAssetPath));
+    }
 }
