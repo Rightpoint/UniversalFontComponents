@@ -65,3 +65,19 @@ To use this library:
     ![ScreenshotMenu] (/Screenshot_Menu_Modules.png)
 
   4. Click on the '+' sign on the top left to add a module
+    ![ScreenshotAdd] (/Screenshot_Module_Settings.png)
+
+  5. Under "More Modules", select "Import Existing Project" and click 'OK'
+    ![ScreenshotImport] (/Screenshot_Import.png)
+
+  6. Locate the directory for the library and click 'OK'
+  7. Uncheck the import box for the sample and check the import box for the universalfontcomponents module and click 'OK'
+  8. Select your _application_ module and click the Dependencies tab
+    ![ScreenshotDependencies] (/Screenshot_Dependencies.png)
+
+  9. Click the '+' on the bottom to add a dependency and select 'Module Dependency'
+    ![ScreenshotModuleDependency] (/Screenshot_AddDependency.png)
+
+  10. Select the universalfontcomponents module and click 'OK'
+  11. Click 'OK' to exit Module Settings and sync your gradle files.
+
