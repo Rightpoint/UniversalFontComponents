@@ -1,9 +1,9 @@
 # UniversalFontComponents
 
-*UniversalFontComponents* is a library that allows you to set a custom font from xml for all your TextViews so that your fonts are consistent across different versions of Android.  
+*UniversalFontComponents* is a library that allows you to set a custom font in xml for all your TextViews.  You can also set a library-provided Roboto font  so that your fonts are consistent across different versions of Android.  
 
 ## Usage
-Before you can use the universal font components, you have to initialize the FontMap.  FontMap keeps a collection of the built-in Roboto fonts mapped to enum values as well as a collection of custom fonts mapped to asset path names for faster loading.
+First, you have to initialize the FontMap.  FontMap loads pre-built fonts into your app.
 
 In your Application's onCreate method, call
 
@@ -17,44 +17,37 @@ Setting a universal font for your app can be done one of two ways:
   1. Use one of the library-provided roboto fonts, or
   2. Inject your own custom font into the view.
 
-To use one of the built-in roboto fonts:
-  1. Use one of the built in views in your layout.xml file:
+### Built-In Fonts
+
+To use one of the built-in roboto fonts, use one of the built in views in your layout.xml file and add the universalFont attribute with one of the built-in Roboto fonts specified :
 
 ```xml
   <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="I am a UniversalFontTextView" />
+      android:text="I am a UniversalFontTextView"
+      app:universalFont="Roboto.Bold" />
 
-```
-  2.Add the universalFont attribute to the view and specify one of the built-in Roboto fonts
-```xml
-      app:universalFont="Roboto.Bold"
-```
+### Custom Fonts
 
 To use your own custom font:
-  1. Use one of the built-in views in your layout.xml file:
+  1.Add your custom font file to your app's asset folder (../src/main/assets/ExampleCustomFont.ttf)
+  2. Use one of the built-in views in your layout.xml file and add the customFont attribute with the name of your custom font file specified:
 
     ```xml
   <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="I am a UniversalFontTextView" />
+      android:text="I am a UniversalFontTextView"
+      app:customFont="ExampleCustomFont.ttf" />
 
     ```
-  2. Add your custom font file to your app's asset folder
-  3. Add the customFont attribute to the view and specify the name of your font file:
-
-```xml
-      app:customFont="CustomFont.ttf"
-```
-
-The following components are currently supported by the library:
-  * TextView
-  * Button
-  * EditText
-  * RadioButton
-  * CheckBox
+The following components are currently provided by the library:
+  * UniversalFontTextView
+  * UniversalFontButton
+  * UniversalFontEditText
+  * UniversalFontRadioButton
+  * UniversalFontCheckBox
 
 ## Importing
 To use this library:
