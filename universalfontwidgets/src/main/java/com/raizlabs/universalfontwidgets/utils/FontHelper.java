@@ -138,6 +138,11 @@ public class FontHelper {
         view.setTypeface(font.getTypeface(view.getContext()));
     }
 
+    /**
+     * Searches the {@link FontMap} for the {@link Typeface} specified by the asset path
+     * @param view the {@link TextView} to apply the font to.
+     * @param fontAssetPath The asset path containing the font file.
+     */
     public static void applyFont(TextView view, String fontAssetPath) {
         view.setTypeface(FontMap.getFontForPath(view.getContext(), fontAssetPath));
     }
