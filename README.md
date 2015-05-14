@@ -34,16 +34,16 @@ To use one of the built-in roboto fonts, use one of the built in views in your l
 
 To use your own custom font:
 
-  1.Add your custom font file to your app's asset folder (../src/main/assets/ExampleCustomFont.ttf)
+  1. Add your custom font file to your app's asset folder (../src/main/assets/ExampleCustomFont.ttf)
   
   2. Use one of the built-in views in your layout.xml file and add the customFont attribute with the name of your custom font file specified:
 
     ```xml
-  <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="I am a UniversalFontTextView"
-      app:customFont="ExampleCustomFont.ttf" />
+      <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a UniversalFontTextView"
+        app:customFont="ExampleCustomFont.ttf" />
     ```
     
 The following components are currently provided by the library:
