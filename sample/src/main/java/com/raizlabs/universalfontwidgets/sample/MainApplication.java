@@ -2,6 +2,7 @@ package com.raizlabs.universalfontwidgets.sample;
 
 import android.app.Application;
 
+import com.raizlabs.universalfontwidgets.UniversalFontComponents;
 import com.raizlabs.universalfontwidgets.utils.FontMap;
 
 public class MainApplication extends Application {
@@ -10,6 +11,6 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        FontMap.init(this);
+        UniversalFontComponents.init(this);
     }
 }
