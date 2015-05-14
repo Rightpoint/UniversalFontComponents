@@ -3,12 +3,12 @@
 *UniversalFontComponents* is a library that allows you to set a custom font in xml for all your TextViews.  You can also set a library-provided Roboto font  so that your fonts are consistent across different versions of Android.  
 
 ## Usage
-First, you have to initialize the FontMap.  FontMap loads pre-built fonts into your app.
+First, you have to initialize the library.
 
 In your Application's onCreate method, call
 
 ```java
-  FontMap.init(this);
+  UniversalFontComponents.init(this);
 ```
 
 to initialize the FontMap.
