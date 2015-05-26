@@ -1,10 +1,11 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: "com.jfrog.bintray"
 
 def siteUrl ='https://github.com/Raizlabs/UniversalFontComponents'
 def gitUrl = 'https://github.com/Raizlabs/UniversalFontComponents.git'
 group = 'com.raizlabs'
-version = '1.0.0'
+version = '1.0.1'
 
 android {
     compileSdkVersion 22
@@ -25,7 +26,7 @@ android {
 }
 
 install {
-    repositories.mavenInstalller {
+    repositories.mavenInstaller {
         pom {
             project {
                 packaging 'aar'
@@ -78,23 +79,21 @@ artifacts {
     archives sourcesJar
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 bintray {
-    Properties properties = new Properties()
-    File file = new File("local.properties")
-    if (file.exists()) {
-        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apiKey")
 
-        user = properties.getProperty("bintray.user")
-        key = properties.getProperty("bintray.apikey")
-
-        configurations = ['archives']
-        pkg {
-            repo = 'maven'
-            name = "com.raizlabs.universalfontcomponents"
-            websiteUrl = siteUrl
-            vcsUrl = gitUrl
-            licenses = ["Apache-2.0"]
-            publish = true
-        }
+    configurations = ['archives']
+    pkg {
+        repo = 'UniversalFontComponents'
+        name = "com.raizlabs.universalfontcomponents"
+        userOrg = 'raizlabs'
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = ["Apache-2.0"]
+        publish = true
     }
 }
