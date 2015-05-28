@@ -25,6 +25,9 @@ android {
     }
 }
 
+/**
+ * This task will generate the pom.xml file and install the AAR to the local M2 repo
+ */
 install {
     repositories.mavenInstaller {
         pom {
@@ -82,13 +85,16 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
+/**
+ * Uploads artifacts to Bintray
+ */
 bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apiKey")
+    user = 'lackofa7742' // properties.getProperty("bintray.user")
+    key = 'c9ad1a11f5a509188af4f2bb4f387c02174e2402' // properties.getProperty("bintray.apiKey")
 
     configurations = ['archives']
     pkg {
-        repo = 'UniversalFontComponents'
+        repo = 'Libraries'
         name = "com.raizlabs.universalfontcomponents"
         userOrg = 'raizlabs'
         websiteUrl = siteUrl
