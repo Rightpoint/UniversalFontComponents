@@ -1,9 +1,8 @@
-package com.raizlabs.universalfontwidgets.sample;
+package com.raizlabs.universalfontcomponents.sample;
 
 import android.app.Application;
 
-import com.raizlabs.universalfontwidgets.UniversalFontComponents;
-import com.raizlabs.universalfontwidgets.utils.FontMap;
+import com.raizlabs.universalfontcomponents.UniversalFontComponents;
 
 public class MainApplication extends Application {
 

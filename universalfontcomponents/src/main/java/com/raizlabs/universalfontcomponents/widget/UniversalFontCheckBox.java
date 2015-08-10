@@ -1,22 +1,22 @@
-package com.raizlabs.universalfontwidgets.widgets;
+package com.raizlabs.universalfontcomponents.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatEditText;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
 
-import com.raizlabs.universalfontwidgets.R;
-import com.raizlabs.universalfontwidgets.utils.FontHelper;
-import com.raizlabs.universalfontwidgets.utils.FontMap;
+import com.raizlabs.universalfontcomponents.R;
+import com.raizlabs.universalfontcomponents.utils.FontHelper;
+import com.raizlabs.universalfontcomponents.utils.FontMap;
 
-public class UniversalFontEditText extends AppCompatEditText {
+public class UniversalFontCheckBox extends AppCompatCheckBox {
 
-    public UniversalFontEditText(Context context) {
+    public UniversalFontCheckBox(Context context) {
         super(context);
     }
 
-    public UniversalFontEditText(Context context, AttributeSet attrs) {
+    public UniversalFontCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
@@ -24,7 +24,7 @@ public class UniversalFontEditText extends AppCompatEditText {
         arr.recycle();
     }
 
-    public UniversalFontEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+    public UniversalFontCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
@@ -52,9 +52,9 @@ public class UniversalFontEditText extends AppCompatEditText {
             return;
         }
 
-        int fontInt = arr.getInt(R.styleable.UniversalFontEditText_universalFont, -1);
+        int fontInt = arr.getInt(R.styleable.UniversalFontCheckBox_universalFont, -1);
 
-        String fontPath = arr.getString(R.styleable.UniversalFontEditText_customFont);
+        String fontPath = arr.getString(R.styleable.UniversalFontCheckBox_customFont);
 
         if (fontPath != null) {
             setFont(fontPath);

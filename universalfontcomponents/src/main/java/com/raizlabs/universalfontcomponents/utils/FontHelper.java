@@ -1,4 +1,4 @@
-package com.raizlabs.universalfontwidgets.utils;
+package com.raizlabs.universalfontcomponents.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

@@ -22,7 +22,7 @@ Setting a universal font for your app can be done one of two ways:
 To use one of the built-in roboto fonts, use one of the built in views in your layout.xml file and add the universalFont attribute with one of the built-in Roboto fonts specified :
 
 ```xml
-  <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+  <com.raizlabs.universalfontcomponents.widgets.UniversalFontTextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="I am a UniversalFontTextView"
@@ -39,7 +39,7 @@ To use your own custom font:
   2. Use one of the built-in views in your layout.xml file and add the customFont attribute with the name of your custom font file specified:
 
     ```xml
-      <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+      <com.raizlabs.universalfontcomponents.widgets.UniversalFontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I am a UniversalFontTextView"

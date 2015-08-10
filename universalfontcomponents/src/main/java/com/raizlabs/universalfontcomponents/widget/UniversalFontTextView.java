@@ -1,22 +1,22 @@
-package com.raizlabs.universalfontwidgets.widgets;
+package com.raizlabs.universalfontcomponents.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
-import com.raizlabs.universalfontwidgets.R;
-import com.raizlabs.universalfontwidgets.utils.FontHelper;
-import com.raizlabs.universalfontwidgets.utils.FontMap;
+import com.raizlabs.universalfontcomponents.R;
+import com.raizlabs.universalfontcomponents.utils.FontHelper;
+import com.raizlabs.universalfontcomponents.utils.FontMap;
 
-public class UniversalFontButton extends AppCompatButton {
+public class UniversalFontTextView extends AppCompatTextView {
 
-    public UniversalFontButton(Context context) {
+    public UniversalFontTextView(Context context) {
         super(context);
     }
 
-    public UniversalFontButton(Context context, AttributeSet attrs) {
+    public UniversalFontTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
@@ -24,8 +24,8 @@ public class UniversalFontButton extends AppCompatButton {
         arr.recycle();
     }
 
-    public UniversalFontButton(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+    public UniversalFontTextView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
         readArray(arr);
@@ -52,16 +52,15 @@ public class UniversalFontButton extends AppCompatButton {
             return;
         }
 
-        int fontInt = arr.getInt(R.styleable.UniversalFontButton_universalFont, -1);
+        int fontInt = arr.getInt(R.styleable.UniversalFontTextView_universalFont, -1);
 
-        if (fontInt == -1) {
-            String fontString = arr.getString(R.styleable.UniversalFontButton_customFont);
-            setFont(fontString);
+        String fontPath = arr.getString(R.styleable.UniversalFontTextView_customFont);
+
+        if (fontPath != null) {
+            setFont(fontPath);
         } else {
             FontHelper.Font font = FontMap.getFontForKey(fontInt);
-            if (font != null) {
-                setFont(font);
-            }
+            setFont(font);
         }
     }
 }

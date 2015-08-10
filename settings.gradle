@@ -1,1 +1,1 @@
-include ':sample', ':universalfontwidgets'
+include ':sample', ':universalfontcomponents'

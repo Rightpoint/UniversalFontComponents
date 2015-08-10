@@ -1,22 +1,22 @@
-package com.raizlabs.universalfontwidgets.widgets;
+package com.raizlabs.universalfontcomponents.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatTextView;
+import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
-import com.raizlabs.universalfontwidgets.R;
-import com.raizlabs.universalfontwidgets.utils.FontHelper;
-import com.raizlabs.universalfontwidgets.utils.FontMap;
+import com.raizlabs.universalfontcomponents.R;
+import com.raizlabs.universalfontcomponents.utils.FontHelper;
+import com.raizlabs.universalfontcomponents.utils.FontMap;
 
-public class UniversalFontTextView extends AppCompatTextView {
+public class UniversalFontEditText extends AppCompatEditText {
 
-    public UniversalFontTextView(Context context) {
+    public UniversalFontEditText(Context context) {
         super(context);
     }
 
-    public UniversalFontTextView(Context context, AttributeSet attrs) {
+    public UniversalFontEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
@@ -24,8 +24,8 @@ public class UniversalFontTextView extends AppCompatTextView {
         arr.recycle();
     }
 
-    public UniversalFontTextView(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
+    public UniversalFontEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
 
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.UniversalFontTextView);
         readArray(arr);
@@ -52,9 +52,9 @@ public class UniversalFontTextView extends AppCompatTextView {
             return;
         }
 
-        int fontInt = arr.getInt(R.styleable.UniversalFontTextView_universalFont, -1);
+        int fontInt = arr.getInt(R.styleable.UniversalFontEditText_universalFont, -1);
 
-        String fontPath = arr.getString(R.styleable.UniversalFontTextView_customFont);
+        String fontPath = arr.getString(R.styleable.UniversalFontEditText_customFont);
 
         if (fontPath != null) {
             setFont(fontPath);

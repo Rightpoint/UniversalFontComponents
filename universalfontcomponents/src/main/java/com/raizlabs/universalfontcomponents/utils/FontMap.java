@@ -1,12 +1,12 @@
-package com.raizlabs.universalfontwidgets.utils;
+package com.raizlabs.universalfontcomponents.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.util.SparseArray;
 
-import com.raizlabs.universalfontwidgets.R;
-import com.raizlabs.universalfontwidgets.utils.FontHelper.Font;
+import com.raizlabs.universalfontcomponents.R;
+import com.raizlabs.universalfontcomponents.utils.FontHelper.Font;
 
 import java.util.HashMap;
 

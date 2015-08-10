@@ -1,8 +1,8 @@
-package com.raizlabs.universalfontwidgets;
+package com.raizlabs.universalfontcomponents;
 
 import android.content.Context;
 
-import com.raizlabs.universalfontwidgets.utils.FontMap;
+import com.raizlabs.universalfontcomponents.utils.FontMap;
 
 public class UniversalFontComponents {
 

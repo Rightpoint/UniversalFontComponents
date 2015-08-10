@@ -1,4 +1,4 @@
-package com.raizlabs.universalfontwidgets;
+package com.raizlabs.universalfontcomponents;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
