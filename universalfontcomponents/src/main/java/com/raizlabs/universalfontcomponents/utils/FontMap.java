@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class FontMap {
 
-    private static SparseArray<FontHelper.Font> defaultFontMap;
+    private static SparseArray<Font> defaultFontMap;
 
     private static HashMap<String, Typeface> customFontMap;
 

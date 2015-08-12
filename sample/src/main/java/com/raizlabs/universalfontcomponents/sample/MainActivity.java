@@ -3,7 +3,6 @@ package com.raizlabs.universalfontcomponents.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
