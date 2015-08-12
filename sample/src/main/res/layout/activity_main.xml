@@ -16,26 +16,26 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Roboto Defaults"/>
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             app:universalFont="Roboto.Bold"/>
 
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontButton
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
             app:universalFont="Roboto.Italic"/>
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontRadioButton
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Radio Button"
@@ -48,26 +48,26 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Custom"/>
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontTextView
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             app:customFont="@string/Font.CNR"/>
 
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontButton
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
             app:customFont="@string/Font.CNR"/>
 
-        <com.raizlabs.universalfontwidgets.widgets.UniversalFontRadioButton
+        <com.raizlabs.universalfontcomponents.widget.UniversalFontRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Radio Button"
