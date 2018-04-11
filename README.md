@@ -1,3 +1,10 @@
+[DEPRECATED]
+
+For platform 26 (Oreo) and above (also available in support library 26 and above), use the native Platform Components and fontFamily parameter.
+For more information about font management :
+
+https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts.html#programmatically
+
 # UniversalFontComponents
 
 *UniversalFontComponents* is a library that allows you to set a custom font in xml for all your TextViews.  You can also set a library-provided Roboto font  so that your fonts are consistent across different versions of Android.  
